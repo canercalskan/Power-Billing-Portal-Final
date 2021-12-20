@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/3da5cff3a5.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="~/Content/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-light flex-wrap fixed-top">
+        <a class="navbar-brand ms-5 me-5 fs-1 letter-space text-white" href="/Home/Index">IKUPAY!</a>
+        <button class="navbar-toggler text-dark border-white bg-white ps-4 pe-4 pt-2 pb-2" type="button" data-bs-toggle="collapse" data-bs-target="#ResponsiveNavContent" aria-controls="ResponsiveNavContent" aria-expanded="false" aria-label="Toggle navigation">
+            MENU
+        </button>
+        <div class="collapse navbar-collapse" id="ResponsiveNavContent">
+            <ul class="navbar-nav">
+                <li class="nav-item active"> @Html.ActionLink("HOME", "Index", "Home", new { @class = "nav-link ms-5 text-white txt-shadow" }) </li>
+                <li class="nav-item active"> @Html.ActionLink("INFORMATION", "Info", "Home", new { @class = "nav-link ms-5 text-white txt-shadow" }) </li>
+                <li class="nav-item active"> @Html.ActionLink("CONTACT", "Contact", "Home", new { @class = "nav-link ms-5 text-white txt-shadow" }) </li>
+            </ul>
+
+            <ul class="navbar-nav ms-auto ms-lg-auto me-0 me-md-2 me-lg-5">
+                @Html.ActionLink("LOG IN", "Login", "Home", new { @class = "btn btn-light ps-4 pe-4 fs-4 " })
+
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container content">
+
+        <div class="row p-5 h-auto " style="background-color: #F6F6F6;">
+            <h1 class="fw-bolder text-center">WHO ARE WE?</h1>
+            <p class="mt-4">
+                IKUPAY! was founded in December 2021 by <b>Caner Eren Çalışkan. </b>IKUPAY! offers power billing portal to electricity supply companies and online payment for customers.
+                We offer a great deal, %0.99 commission to the companies. Customers can use our portal with no additional cost. IKUPAY! website's user and device
+                friendly interface is easy to use on any device with responsive design.
+            </p>
+        </div>
+        <div class="row p-5 h-auto">
+            <h1 class="fw-bolder text-center">ONLINE PAYMENT</h1>
+            <p class="mt-4">
+                Using online payment methods rather than traditional methods is much more efficient. You don't have to physically go to the bank
+                or supplier company's store to pay your debt. You can view and pay your power bills within few minutes and save a lot of time.
+                Supplier companies does not have to print customers bills to the paper, thanks to our E-BILL generator. Suppliers can create E-BILL
+                and send information mail to the customer. This reduces cost of the paper and physical delivery.
+            </p>
+        </div>
+        <div class="row p-5 h-auto" style="background-color: #F6F6F6;">
+            <h1 class="fw-bolder text-center">ECO FRIENDLY</h1>
+            <p class="mt-4">
+                Traditional paper-bills are damaging the environment. It should be known that 2 tons of trees are required for 1 ton of paper pulp,
+                and for this, <span class="text-danger">20 trees have been cut down</span> and only 200,000 pages, that is, 80 boxes of A4 copy paper, can be produced with 20 trees.
+                We offer <span style="color: rgb(108, 228, 108);">paperless billing </span>so that there will be no need for cutting down trees.
+            </p>
+        </div>
+        <p class="row mt-4 mb-5"><h4><a href="/Home/Contact">Contact</a> us if you have any question or feedbacks.</h4></p>
+    </div>
+
+
+
+
+
+    <footer>
+        <p class="fw-lighter text-center text-white fs-6 pt-1">©  @DateTime.Now.Year IKUPAY! All Rights Reserved</p>
+    </footer>
+</body>
+</html>

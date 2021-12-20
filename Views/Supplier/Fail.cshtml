@@ -1,0 +1,29 @@
+﻿@model Power_Billing_Portal.Models.Bill
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>FAIL!</title>
+</head>
+<body style="background-color: #e75757">
+
+
+    <div class="alert fade show d-flex align-items-center justify-content-center" style="height: 750px">
+        <p> <h1 class=" text-center fs-1"> <strong class="fs-1">There is no user with ID = @Html.DisplayFor(model => model.UserID)!</strong></h1></p>
+       
+    </div>
+    
+
+    <script>
+        window.setTimeout(function () {
+            location.href = "/Supplier/SupplierPanel";
+        }, 5000);
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,192 @@
+    body {
+        background-color: #ffff;
+        font-family: 'Barlow', sans-serif;
+    }
+    
+
+    a {
+        text-decoration: none;
+    }
+
+    ul li a:hover {
+        text-decoration:overline;
+        opacity: 0.8;
+    }
+
+    nav {
+        background: rgb(12,108,133);
+        background: linear-gradient(90deg, rgba(12,108,133,1) 19%, rgba(2,0,36,1) 100%);
+    }
+
+    p {
+        color: #4A4A4A;
+        text-align: justify;
+    }
+    p a:hover {
+        text-decoration-line:underline;
+    }
+
+    .letter-space {
+        letter-spacing: 0.6rem;
+    }
+
+    .float-right {
+        position: relative;
+        right: 0;
+    }
+
+    .bg-special {
+        background-color: #232629;
+        color:white;
+        
+    }
+
+    #login {
+        width: 7em;
+        height: 3em;
+        letter-spacing: 2px;
+        transition: all 0.5s;
+    }
+    #login:hover {
+        background-color: #6B6C7E;
+        color: white;
+    }
+
+    #submit {
+        width: 7em;
+        height: 3em;
+        color: white;
+        background-color: #025A95;
+        font-size:22px;
+    }
+    #submit:hover {
+        opacity: 0.8;
+    }
+
+    .txt-shadow {
+        transition: box-shadow 0.8s;
+    }
+    
+    /*.txt-shadow:hover {
+        box-shadow: 10px -5px 38px -3px rgba(0,0,0,0.66);
+        -webkit-box-shadow: 10px -5px 38px -3px rgba(0,0,0,0.66);
+        -moz-box-shadow: 10px -5px 38px -3px rgba(0,0,0,0.66);
+    }*/
+
+      .content {
+          margin-top: 10rem;
+      }
+
+      .border-right {
+          border-right: 1px solid #CFCFD0;
+      }
+
+      form {
+          border: 15px solid #e4f4fd;
+          background-color: white;
+          padding: 3rem;
+      }
+      #submitButton {
+        color: white;
+        background-color: #025A95;
+        font-size:22px;
+      }
+
+    #submitButton:hover {
+        opacity: 0.8;
+    }
+
+input {
+    border: 1.8px solid black;
+    transition: border-color 0.2s;
+}
+
+input:focus {
+    box-shadow:none;
+}
+
+    input:hover {
+        border-color: #80BBD4;
+    }
+
+      #IndexEmail {
+        border: 1.8px solid black;
+        transition: border-color 0.2s;
+      }
+      #IndexEmail:focus {
+        box-shadow: none;
+    }
+
+    #IndexEmail:hover {
+    border-color: #80BBD4;
+    }
+
+      #IndexPassword {
+          border: 1.8px solid black;
+          transition: border-color 0.2s;
+      }
+      #IndexPassword:focus {
+          box-shadow: none;
+         
+      }
+      #IndexPassword:hover {
+        border-color: #80BBD4;
+      }
+     
+     
+
+      #why {
+          color: #025A95;
+          font-weight: bolder;
+      }
+
+      #whylist {
+          list-style-type: none;
+         text-align: left;
+      }
+
+      .carousel {
+          transition: box-shadow 0.5s;
+      }
+
+      .carousel:hover {
+        box-shadow: 0px 3px 22px 8px rgb(107, 114, 116);
+        -webkit-box-shadow: 0px 3px 22px 8px rgb(107, 114, 116);
+        -moz-box-shadow: 0px 3px 22px 8px rgb(107, 114, 116);
+      }
+      
+      footer {
+          word-spacing: 2px;
+          background-color: #0B5C77;
+          width: 100%;
+          height: 2rem;
+      }
+
+      #billcard {
+
+      }
+
+      .borders {
+          border:1px solid black;
+      }
+      
+    /*0 < width <= 576px*/
+    @media (min-width:576px) {
+       li a , p{font-size: 16px;}
+    } 
+    
+    @media (min-width:768px) {
+        li a {font-size: 18px;}
+        p {font-size: 19px;}
+    }
+   @media (min-width:992px) {
+        li a {font-size: 22px;}
+        p {font-size: 20px;}
+    }
+  
+    @media (min-width:1400px) {
+        li a {font-size: 26px;}
+        p {font-size: 22px;
+        }
+    }
+  
