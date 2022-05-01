@@ -24,4 +24,4 @@ Supplier Controller deals with supplier company login, logout, sending bill to t
 ![adminlogin](https://user-images.githubusercontent.com/84105094/166136410-b7221b21-add6-4f95-9f82-7300d1730297.jpeg)
 
 
--> The whole system is functional, but it requires a database connection which contains related tables that modified with tables which can be extracted from the /Models/ikupay.edmx file.
+-> The whole system is functional, but it requires a database connection which contains related tables that modified with properties which can be extracted from the /Models/ikupay.edmx file.
